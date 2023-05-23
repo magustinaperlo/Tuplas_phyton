@@ -15,3 +15,15 @@ else:
         cont = cont + 1
 
 print ("El número ingresado se repite", cont, "veces")
+
+#sugerencia menos líneas de código: 
+
+numeros = (3, 4, 8, 3, 2, 0, 3, 2, 5, 5, 1, 9, 0, 5, 4, 8, 2, 8, 2, 3, 3)
+
+ingreso = int(input("Ingrese el número que desea consultar: "))
+
+if ingreso not in numeros:
+    print("El número ingresado no se encuentra en la tupla.")
+else:
+    contador = numeros.count(ingreso)
+    print("El número ingresado se repite", contador, "veces.")
